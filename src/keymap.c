@@ -64,17 +64,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                                     KC_BSPACE,      KC_LGUI,        KC_LCTRL,       KC_RCTRL,       KC_ENTER,       KC_SPACE
   ),
   [1] = LAYOUT_ergodox_pretty(
-    KC_NO,          KC_NO,          KC_NO,          KC_F1,          KC_F5,          KC_F9,          KC_NO,                                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
-    KC_NO,          KC_NO,          KC_NO,          KC_F2,          KC_F6,          KC_F10,         KC_NO,                                          KC_NO,          KC_NO,          KC_7,           KC_8,           KC_9,           KC_PLUS,        KC_NO,
-    KC_NO,          KC_NO,          KC_NO,          KC_F3,          KC_F7,          KC_F11,                                                                         KC_NO,          KC_4,           KC_5,           KC_6,           KC_MINUS,       KC_NO,
-    KC_NO,          KC_NO,          KC_NO,          KC_F4,          KC_F8,          KC_F12,         KC_NO,                                          KC_NO,          KC_NO,          KC_1,           KC_2,           KC_3,           KC_ASTR,        KC_NO,
-    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                                                                                          KC_DOT,         KC_NO,          KC_NO,          KC_SLASH,       KC_NO,
+    KC_NO,          KC_NO,          KC_NO,          KC_F1,          KC_F5,          KC_F9,          KC_NO,                                          KC_NO,          KC_NO,          KC_7,           KC_8,           KC_9,           KC_PLUS,        KC_NO,
+    KC_NO,          KC_NO,          KC_NO,          KC_F2,          KC_F6,          KC_F10,         KC_NO,                                          KC_NO,          KC_NO,          KC_4,           KC_5,           KC_6,           KC_MINUS,       KC_NO,
+    KC_NO,          KC_NO,          KC_NO,          KC_F3,          KC_F7,          KC_F11,                                                                         KC_NO,          KC_1,           KC_2,           KC_3,           KC_ASTR,        KC_NO,
+    KC_NO,          KC_NO,          KC_NO,          KC_F4,          KC_F8,          KC_F12,         KC_NO,                                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_SLASH,       KC_NO,
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                                                                                          KC_DOT,         KC_NO,          KC_NO,          KC_NO,          KC_NO,
                                                                                                     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
                                                                                                                     KC_TRANSPARENT, KC_TRANSPARENT,
                                                                                     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_0
   ),
   [2] = LAYOUT_ergodox_pretty(
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_PSCREEN,     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
+    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_PSCREEN,
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                 KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_TRANSPARENT, KC_TRANSPARENT,
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
@@ -93,7 +93,7 @@ void keyboard_post_init_user(void) {
 }
 
 const uint8_t PROGMEM ledmap[][DRIVER_LED_TOTAL][3] = {
-    [1] = { {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {85,203,158}, {85,203,158}, {85,203,158}, {41,255,255}, {0,0,0}, {85,203,158}, {230,166,234}, {85,203,158}, {41,255,255}, {0,0,0}, {85,203,158}, {85,203,158}, {85,203,158}, {41,255,255}, {41,255,255}, {0,0,0}, {0,0,0}, {41,255,255}, {230,166,234}, {230,166,234}, {230,166,234}, {0,0,0}, {0,0,0}, {230,166,234}, {230,166,234}, {230,166,234}, {0,0,0}, {0,0,0}, {230,166,234}, {230,166,234}, {230,166,234}, {0,0,0}, {0,0,0}, {230,166,234}, {230,166,234}, {230,166,234}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0} },
+    [1] = { {0,0,0}, {85,203,158}, {85,203,158}, {85,203,158}, {41,255,255}, {0,0,0}, {85,203,158}, {230,166,234}, {85,203,158}, {41,255,255}, {0,0,0}, {85,203,158}, {85,203,158}, {85,203,158}, {41,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {41,255,255}, {41,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {230,166,234}, {230,166,234}, {230,166,234}, {0,0,0}, {0,0,0}, {230,166,234}, {230,166,234}, {230,166,234}, {0,0,0}, {0,0,0}, {230,166,234}, {230,166,234}, {230,166,234}, {0,0,0}, {0,0,0}, {230,166,234}, {230,166,234}, {230,166,234}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0} },
 
     [2] = { {0,0,0}, {0,0,0}, {0,0,0}, {181,136,153}, {181,136,153}, {0,0,0}, {181,136,153}, {0,0,0}, {0,0,0}, {0,0,0}, {181,136,153}, {181,136,153}, {181,136,153}, {181,136,153}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0} },
 
