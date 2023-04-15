@@ -60,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LSHIFT,      KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,           KC_TRANSPARENT,                                 KC_EQUAL,       KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_RSHIFT,
     KC_LCTRL,       KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_LALT,                                                                                                        MT(MOD_RALT, KC_APPLICATION),KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
                                                                                                     KC_CIRC,        KC_F5,          KC_TRANSPARENT, KC_DLR,
-                                                                                                                    KC_F20,         KC_TRANSPARENT,
+                                                                                                                    RCTL(KC_F12),   KC_TRANSPARENT,
                                                                                     KC_BSPACE,      KC_LGUI,        MO(1),          MO(2),          KC_ENTER,       KC_SPACE
   ),
   [1] = LAYOUT_ergodox_pretty(
